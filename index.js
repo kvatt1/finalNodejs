@@ -8,8 +8,9 @@ const PORT = 5959;
 const dbConnection = async () => {
     const username = "kvatt1";
     const password = "Kmongodb";
-    const URL ="mongodb+srv://kvatt1:Kmongodb@cluster0.dxvit3l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-     //`mongodb+srv://${username}:${password}@cluster0.dxvit3l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+    const URL ='`mongodb+srv://${username}:${password}@cluster0.dxvit3l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+    //mongodb+srv://kvatt1:Kmongodb@cluster0.dxvit3l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+    
     const client = new MongoClient(URL);
     try {
         /* Connects to MongoDB*/
