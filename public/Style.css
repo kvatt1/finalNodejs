@@ -107,10 +107,9 @@
         }
         nav{
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            margin: 0 10px;
         }
         .profile-img{
             width:150px;

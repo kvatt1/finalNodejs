@@ -17,8 +17,8 @@ const dbConnection = async () => {
         /* Call for fetching medicine data*/
         const data = await getMedicinesData(client);
         const filePath = path.join(__dirname, "public", "db.json");
-        /*file.writeFileSync(filePath, JSON.stringify(data, null, 2));
-        console.log("Data saved to db.json successfully.");*/
+        file.writeFileSync(filePath, JSON.stringify(data, null, 2));
+        console.log("Data saved to db.json successfully.");
         return data;
 
     } catch (e) {
